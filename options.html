@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+        }
+        section {
+            height: calc(100vh - 142px);
+            padding: 20px;
+        }
+        form {
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            height: 100%;
+            grid-template-rows: 3fr 1fr;
+            grid-gap: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+        header {
+            border-bottom-style: dashed;
+            border-color: tan;
+            text-align: center;
+        }
+        header h1 {
+            margin: 20px;
+            font-size: 50px;
+            color: chocolate;
+        }
+        .select-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        select {
+            appearance: none;
+            padding: 10px;
+            height: 50px;
+            font-size: 26px;
+            min-width: 30%;
+            border: 0;
+            box-shadow: 2px 3px 6px #b1b1b1;
+        }
+
+        .button-wrapper {
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+
+        .button-wrapper::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            left: 0;
+            z-index: -1;
+            top: 50%;
+            border-bottom-color: tan;
+            border-bottom-style: double;
+        }
+
+        button {
+            appearance: none;
+            padding: 10px 21px;
+            font-size: 26px;
+            border: 0;
+            box-shadow: 2px 3px 6px #b1b1b1;
+            color: white;
+            background: #c15b12;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1><b>Currency</b> Converter</h1>
+        </header>
+
+        <section>
+            <form action="">
+                <div class="select-wrapper">
+                    <div class="form-group">
+                        <label for="base-currency">Select Base Currency</label>
+                        <select id="base-currency" name="base-currency">
+                        </select>
+                    </div>
+    
+                    <div class="form-group">
+                        <label for="preferred-currency">Select Preferred Currency</label>
+                        <select id="preferred-currency" name="preferred-currency">
+                        </select>
+                    </div>
+                </div>
+                
+
+                <div class="button-wrapper">
+                    <button type="submit" id="save-changes">Save Changes</button>
+                </div>
+            </form>
+            
+        </section>
+    </main>
+
+    <script src="options.js" type="module"></script>
+
+</body>
+
+</html>
