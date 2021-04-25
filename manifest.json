@@ -3,23 +3,12 @@
     "name": "Currency Converter",
     "description": "Currency Converter lets you select and convert 33 of the world currencies. ",
     "version": "0.0.1",
-    "content_scripts": [
-        {
-            "matches": [
-                "http://oracle.com/*"
-            ],
-            "js": [
-                "content.js"
-            ]
-        }
-    ],
     "icons": { 
         "16": "logo_16.png",
         "48": "logo_48.png",
        "128": "logo_128.png" },
     "browser_action": {
-        "default_icon": "logo_128.png",
-        "default_popup": "popup.html"
+        "default_icon": "logo_128.png"
     },
     "options_page": "options.html",
     "background": {
@@ -31,8 +20,6 @@
     "permissions": [
         "contextMenus",
         "storage",
-        "tabs",
-        "notifications",
-        "<all_urls>"
+        "notifications"
     ]
 }
