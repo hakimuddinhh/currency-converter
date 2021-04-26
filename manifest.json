@@ -4,16 +4,16 @@
     "description": "Currency Converter lets you select and convert 33 of the world currencies. ",
     "version": "0.0.1",
     "icons": { 
-        "16": "logo_16.png",
-        "48": "logo_48.png",
-       "128": "logo_128.png" },
+        "16": "./res/logo_16.png",
+        "48": "./res/logo_48.png",
+       "128": "./res/logo_128.png" },
     "browser_action": {
         "default_icon": "logo_128.png"
     },
-    "options_page": "options.html",
+    "options_page": "./src/options.html",
     "background": {
         "scripts": [
-            "background.js"
+            "./src/background.js"
         ],
         "persistent": false
     },

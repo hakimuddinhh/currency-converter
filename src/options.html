@@ -5,10 +5,12 @@
         * {
             margin: 0;
         }
+
         section {
             height: calc(100vh - 142px);
             padding: 20px;
         }
+
         form {
             display: grid;
             align-items: center;
@@ -17,26 +19,31 @@
             grid-template-rows: 3fr 1fr;
             grid-gap: 20px;
         }
+
         .form-group {
             display: flex;
             flex-direction: column;
             gap: 14px;
         }
+
         header {
             border-bottom-style: dashed;
             border-color: tan;
             text-align: center;
         }
+
         header h1 {
             margin: 20px;
             font-size: 50px;
             color: chocolate;
         }
+
         .select-wrapper {
             display: flex;
             flex-direction: column;
             gap: 25px;
         }
+
         select {
             appearance: none;
             padding: 10px;
@@ -94,20 +101,20 @@
                         <select id="base-currency" name="base-currency">
                         </select>
                     </div>
-    
+
                     <div class="form-group">
                         <label for="preferred-currency">Select Preferred Currency</label>
                         <select id="preferred-currency" name="preferred-currency">
                         </select>
                     </div>
                 </div>
-                
+
 
                 <div class="button-wrapper">
                     <button type="submit" id="save-changes">Save Changes</button>
                 </div>
             </form>
-            
+
         </section>
     </main>
 

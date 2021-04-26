@@ -33,7 +33,6 @@ window.onload = () => {
       document.getElementById('save-changes').addEventListener('click', e => {
         e.stopPropagation();
         e.preventDefault();
-//if changes are changes
         const {currencyConverter: mainState} = mainStorageGlobal;
         const {value: baseCurrency} = document.getElementById("base-currency");
         const {value: preferredCurrency} = document.getElementById("preferred-currency");
